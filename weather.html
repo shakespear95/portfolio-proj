@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data Collection System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: rgba(255, 255, 255, 0.2);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        pre {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Data Collection System</h1>
+        <h2>DevOps Day 1 Challenge</h2>
+        <h3>Project Overview</h3>
+        <p>This project demonstrates DevOps principles by integrating an external API, cloud storage, and automation.</p>
+        <ul>
+            <li>External API Integration (OpenWeather API)</li>
+            <li>Cloud Storage (AWS S3)</li>
+            <li>Infrastructure as Code</li>
+            <li>Version Control (Git)</li>
+            <li>Python Development</li>
+            <li>Error Handling</li>
+            <li>Environment Management</li>
+        </ul>
+        <h3>Technical Architecture</h3>
+        <p><strong>Language:</strong> Python 3.x</p>
+        <p><strong>Cloud Provider:</strong> AWS (S3)</p>
+        <p><strong>External API:</strong> OpenWeather API</p>
+        <p><strong>Dependencies:</strong> boto3, python-dotenv, requests</p>
+        <h3>Project Structure</h3>
+        <pre>
+weather-dashboard/
+  src/
+    __init__.py
+    weather_dashboard.py
+  tests/
+  data/
+  .env
+  .gitignore
+  requirements.txt
+        </pre>
+        <h3>Setup Instructions</h3>
+        <pre>
+1. Clone the repository:
+   git clone https://github.com/ShaeInTheCloud/30days-weather-dashboard.git
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Configure environment variables (.env):
+   OPENWEATHER_API_KEY=your_api_key
+   AWS_BUCKET_NAME=your_bucket_name
+
+4. Configure AWS credentials:
+   aws configure
+
+5. Run the application:
+   python src/weather_dashboard.py
+        </pre>
+        <h3>What I Learned</h3>
+        <ul>
+            <li>AWS S3 bucket creation and management</li>
+            <li>Environment variable management</li>
+            <li>Python best practices for API integration</li>
+            <li>Git workflow</li>
+            <li>Error handling in distributed systems</li>
+            <li>Cloud resource management</li>
+        </ul>
+        <h3>Future Enhancements</h3>
+        <ul>
+            <li>Add weather forecasting</li>
+            <li>Implement data visualization</li>
+            <li>Add more cities</li>
+            <li>Create automated testing</li>
+            <li>Set up CI/CD pipeline</li>
+        </ul>
+    </div>
+    <h1><a href="gallery.html"> Return to more projects</a></h1>
+</body>
+</html>
