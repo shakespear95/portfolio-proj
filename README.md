@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link]([https://livedemo.com](https://shakespear95.github.io/portfolio-proj/))
+https://livedemo.com](https://shakespear95.github.io/portfolio-proj/
 
 
 ## Getting Started
